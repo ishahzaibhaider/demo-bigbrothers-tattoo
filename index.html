@@ -4,119 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Big Brothers Tattoo Studio | Chicago | Book Your Session</title>
-<style>
-  :root{--ink:#0d0d0f;--panel:#16161a;--gold:#c9a227;--txt:#eaeaea;--mut:#9a9a9a}
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--ink);color:var(--txt);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
-  .sans{font-family:Arial,Helvetica,sans-serif}
-  header{position:sticky;top:0;background:rgba(13,13,15,.95);border-bottom:1px solid #26262c;z-index:10}
-  nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
-  .logo{font-size:1.3rem;letter-spacing:2px;color:var(--gold)}
-  nav a{color:var(--txt);text-decoration:none;margin-left:22px;font-size:.95rem}
-  nav a:hover{color:var(--gold)}
-  .hero{max-width:1100px;margin:auto;padding:90px 24px 70px;text-align:center}
-  .hero h1{font-size:clamp(2.2rem,6vw,4rem);letter-spacing:3px}
-  .hero h1 span{color:var(--gold)}
-  .hero p{color:var(--mut);max-width:560px;margin:18px auto 30px;font-size:1.1rem}
-  .btn{display:inline-block;background:var(--gold);color:#111;padding:14px 36px;text-decoration:none;letter-spacing:2px;font-weight:bold;border:none;font-size:1rem;cursor:pointer}
-  .btn:hover{background:#e0b832}
-  .btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--gold);margin-left:12px}
-  .strip{border-top:1px solid #26262c;border-bottom:1px solid #26262c;background:var(--panel)}
-  .strip-inner{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:40px;padding:18px 24px;color:var(--mut);font-size:.9rem;letter-spacing:1px}
-  section{max-width:1100px;margin:auto;padding:70px 24px}
-  h2{font-size:2rem;letter-spacing:2px;margin-bottom:8px}
-  .sub{color:var(--mut);margin-bottom:40px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-  .card{background:var(--panel);border:1px solid #26262c;padding:28px}
-  .card h3{color:var(--gold);letter-spacing:1px;margin-bottom:10px}
-  .card p{color:var(--mut);font-size:.95rem}
-  .price{font-size:1.4rem;color:var(--txt);margin-top:14px}
-  .work{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-  .tile{aspect-ratio:1;background:linear-gradient(135deg,#1c1c22,#101013);border:1px solid #26262c;display:flex;align-items:center;justify-content:center;color:#3a3a42;font-size:.85rem;letter-spacing:2px;text-align:center;padding:10px}
-  .steps{counter-reset:s}
-  .step{display:flex;gap:18px;margin-bottom:26px;align-items:flex-start}
-  .num{min-width:44px;height:44px;border:1px solid var(--gold);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
-  form{background:var(--panel);border:1px solid #26262c;padding:34px;max-width:640px;margin:auto}
-  label{display:block;margin:16px 0 6px;font-size:.9rem;letter-spacing:1px;color:var(--mut)}
-  input,select,textarea{width:100%;background:#0f0f12;border:1px solid #2c2c33;color:var(--txt);padding:12px;font-size:1rem}
-  input:focus,select:focus,textarea:focus{outline:1px solid var(--gold)}
-  .note{font-size:.85rem;color:var(--mut);margin-top:14px}
-  footer{border-top:1px solid #26262c;text-align:center;padding:34px;color:#55555e;font-size:.85rem;letter-spacing:1px}
-  .ok{display:none;background:#10241a;border:1px solid #1f7a4d;color:#7ce0ae;padding:16px;margin-top:18px;text-align:center}
-</style>
+<meta name="description" content="Custom tattoos by Payton and the Big Brothers crew in Chicago. Book your session online with deposits and reminders.">
+<meta property="og:title" content="Big Brothers Tattoo Studio | Chicago | Book Your Session">
+<meta property="og:description" content="Custom tattoos by Payton and the Big Brothers crew in Chicago. Book your session online with deposits and reminders.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🖋️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <nav>
-    <div class="logo sans">BIG BROTHERS TATTOO</div>
-    <div class="sans"><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#book">Book</a></div>
+    <a class="logo" href="#top">BIG BROTHERS TATTOO</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="navlinks">
+      <a href="#services">Pricing</a>
+      <a href="#work">Real Work</a>
+      <a href="#how">How It Works</a>
+      <a class="cta" href="#book">Book A Session</a>
+    </div>
   </nav>
 </header>
 
-<div class="hero">
-  <h1>INK THAT <span>HEALS CLEAN</span></h1>
-  <p>Custom tattoos by Payton and the Big Brothers crew. Chicago based. Every piece drawn for you, never pulled from a flash sheet twice.</p>
-  <a class="btn sans" href="#book">BOOK A SESSION</a>
-  <a class="btn ghost sans" href="#work">SEE HEALED WORK</a>
+<div class="hero" id="top">
+  <span class="eyebrow">Chicago · $200 Minimum · DM no more</span>
+  <h1>Ink That <em>Heals Clean</em></h1>
+  <p>Custom tattoos by Payton and the Big Brothers crew. Every piece drawn for you, never pulled from a flash sheet twice.</p>
+  <a class="btn" href="#book">Book A Session</a>
+  <a class="btn ghost" href="#work">See Real Work</a>
+  <div class="badges"><span class="badge">📍 Chicago, IL</span><span class="badge">💵 $200 minimum</span><span class="badge">🔒 Deposit secures your slot</span><span class="badge">🩹 Healed work on display</span></div>
 </div>
 
-<div class="strip sans">
-  <div class="strip-inner">
-    <span>CHICAGO, IL</span><span>$200 MINIMUM</span><span>DEPOSIT SECURES YOUR SLOT</span><span>HEALED WORK ON DISPLAY</span>
-  </div>
-</div>
-
-<section id="work">
-  <h2>THE WORK</h2>
-  <p class="sub">Your portfolio drops in here. Healed pieces, not just fresh ones, because that is what clients actually wear.</p>
-  <div class="work">
-    <div class="tile">BLACK AND GREY SLEEVE</div>
-    <div class="tile">FINE LINE SCRIPT</div>
-    <div class="tile">REALISM PORTRAIT</div>
-    <div class="tile">TRADITIONAL</div>
-    <div class="tile">COVER UP</div>
-    <div class="tile">CUSTOM BACKPIECE</div>
+<section id="services">
+  <div class="container">
+    <h2 class="reveal">Pricing</h2>
+    <p class="sub reveal">Clear numbers up front. No haggling in the DMs.</p>
+    <div class="grid"><div class="card reveal"><div class="ico">🖊️</div><h3>SMALL PIECE</h3><p>Up to palm size, single session, clean linework or script.</p><div class="price">From $200</div></div><div class="card reveal"><div class="ico">⏱️</div><h3>HALF DAY</h3><p>Four hours on the chair. Ideal for forearm pieces and detailed work.</p><div class="price">From $600</div></div><div class="card reveal"><div class="ico">🗓️</div><h3>FULL DAY</h3><p>Eight hours for large scale work, sleeves in progress, backpieces.</p><div class="price">From $1100</div></div></div>
   </div>
 </section>
 
-<section id="pricing">
-  <h2>PRICING</h2>
-  <p class="sub">Clear numbers up front. No haggling in the DMs.</p>
-  <div class="grid">
-    <div class="card"><h3 class="sans">SMALL PIECE</h3><p>Up to palm size, single session, simple linework or script.</p><div class="price">From $200</div></div>
-    <div class="card"><h3 class="sans">HALF DAY</h3><p>Four hours on the chair. Ideal for forearm pieces and detailed work.</p><div class="price">From $600</div></div>
-    <div class="card"><h3 class="sans">FULL DAY</h3><p>Eight hours for large scale work, sleeves in progress, backpieces.</p><div class="price">From $1100</div></div>
+<section id="work" style="background:var(--panel)">
+  <div class="container center">
+    <h2 class="reveal">Real Work, Straight From Instagram</h2>
+    <p class="sub reveal">Fresh pieces and healed results posted by the studio itself.</p>
+    <div class="iggrid"><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/supremepayton/reel/DZWRFN4RImd/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/supremepayton/reel/DZJNEzPxURw/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/supremepayton/reel/DYgPmHStdIn/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/supremepayton/reel/DYOGC-0Rlot/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/supremepayton/reel/DXuuD7_kW2n/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/supremepayton/reel/DXfz_uxjcmp/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div></div>
+    <p class="ig-note">Live posts from <a href="https://www.instagram.com/supremepayton/" target="_blank" rel="noopener">@supremepayton</a>, always up to date.</p>
   </div>
 </section>
 
-<section>
-  <h2>HOW BOOKING WORKS</h2>
-  <p class="sub">Three steps. No lost messages.</p>
-  <div class="steps">
-    <div class="step"><div class="num sans">1</div><div><strong>Send your idea.</strong><br><span style="color:var(--mut)">Placement, size, reference images, budget.</span></div></div>
-    <div class="step"><div class="num sans">2</div><div><strong>Pay the deposit.</strong><br><span style="color:var(--mut)">Deposit locks your date and goes toward the final price.</span></div></div>
-    <div class="step"><div class="num sans">3</div><div><strong>Show up. Get inked.</strong><br><span style="color:var(--mut)">Automatic reminders before your session so nobody forgets.</span></div></div>
+<section id="how">
+  <div class="container">
+    <h2 class="reveal">How It Works</h2>
+    <p class="sub reveal">Three steps. No lost messages.</p>
+    <div class="steps"><div class="step reveal"><b>Send your idea</b><p>Placement, size, reference images and budget through the form below.</p></div><div class="step reveal"><b>Pay the deposit</b><p>A $50 deposit locks your date and goes toward the final price.</p></div><div class="step reveal"><b>Show up, get inked</b><p>Automatic reminders before your session so nobody forgets.</p></div></div>
   </div>
 </section>
 
-<section id="book">
-  <h2 style="text-align:center">BOOK YOUR SESSION</h2>
-  <p class="sub" style="text-align:center">This form replaces the DM back and forth.</p>
-  <form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';this.reset()">
-    <label>NAME</label><input type="text" required>
-    <label>EMAIL OR PHONE</label><input type="text" required>
-    <label>WHAT ARE WE DOING</label>
-    <select><option>Small piece, from $200</option><option>Half day session, from $600</option><option>Full day session, from $1100</option><option>Cover up, needs consult</option></select>
-    <label>PLACEMENT AND IDEA</label><textarea rows="4" placeholder="Left forearm, fine line rose with script, about 6 inches"></textarea>
-    <label>PREFERRED DATE</label><input type="date">
-    <div style="text-align:center;margin-top:26px"><button class="btn sans" type="submit">REQUEST MY SLOT</button></div>
-    <p class="note">A $50 deposit is requested once your date is confirmed. Deposits are credited to your final price.</p>
-    <div class="ok sans">Request received. You will get a confirmation and deposit link shortly.</div>
-  </form>
+<section id="book" style="background:var(--panel)">
+  <div class="container center">
+    <h2 class="reveal">Book Your Session</h2>
+    <p class="sub reveal">This form replaces the DM back and forth.</p>
+    <form id="bookform" novalidate>
+      <div class="row2"><div><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div><div><label for="contact">Email or phone</label><input type="text" id="contact" name="contact" placeholder="you@email.com" required></div></div><div class="row2"><div><label for="service">What are we doing</label><select id="service" name="service"><option>Small piece, from $200</option><option>Half day session, from $600</option><option>Full day session, from $1100</option><option>Cover up, needs consult</option></select></div><div><label for="date">Preferred date</label><input type="date" id="date" name="date" placeholder=""></div></div><div><label for="idea">Placement and idea</label><textarea id="idea" name="idea" rows="3" placeholder="Left forearm, fine line rose with script, about 6 inches"></textarea></div>
+      <div style="text-align:center;margin-top:26px"><button class="btn" type="submit">Request My Slot</button></div>
+      <p class="formerr">Please fill in the highlighted fields.</p>
+      <p class="note">A $50 deposit is requested once your date is confirmed. Deposits are credited to your final price.</p>
+      <div class="ok">Request received. You will get a confirmation and deposit link shortly.</div>
+    </form>
+  </div>
 </section>
 
-<footer class="sans">
-  BIG BROTHERS TATTOO STUDIO, CHICAGO IL · DEMO PREVIEW BUILT FOR PAYTON · THIS PAGE IS A DESIGN CONCEPT, NOT THE LIVE STUDIO SITE
+<footer>
+  <p class="fsoc"><a href="https://www.instagram.com/supremepayton/" target="_blank" rel="noopener">Instagram @supremepayton</a></p>
+  <p>Big Brothers Tattoo Studio · Chicago IL</p>
+  <p>&copy; <span id="year"></span> Big Brothers Tattoo Studio. Demo preview, a design concept and not the live business site.</p>
 </footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
